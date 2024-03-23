@@ -1,0 +1,14 @@
+{
+  "name": "api-workshop",
+  "version": "1.0.0",
+  "description": "API Workshop by Airtribe",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "Dhaval Trivedi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.19.1"
+  }
+}
