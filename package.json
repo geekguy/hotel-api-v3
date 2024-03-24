@@ -4,7 +4,8 @@
   "description": "API Workshop by Airtribe",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "author": "Dhaval Trivedi",
   "license": "ISC",
