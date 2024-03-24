@@ -4,6 +4,7 @@ const app = express();
 const mongoose = require("mongoose");
 
 const hotelRouter = require("./routes/hotel");
+const userRouter = require("./routes/user");
 
 console.log(`Mongo URL = ${process.env.MONGO_URL}`);
 mongoose.connect(process.env.MONGO_URL).then(() => {
@@ -26,6 +27,7 @@ app.use(logger);
 app.use(anotherLogger);
 
 app.use("/api/hotels", hotelRouter);
+app.use("/api/users", userRouter);
 
 app.get("/", (req, res) => {
   console.log(req);
